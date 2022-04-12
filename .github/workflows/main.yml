@@ -8,7 +8,7 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches: [ .github/workflows/main.yml ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -179,6 +179,6 @@ contract HCoinxToken is ERC20Interface, SafeMath {
         emit Approval(msg.sender, spender, tokens);
         return true;
     }
-.github/workflows/main.yml
+.
           echo Add other actions to build,
           echo test, and deploy your project.
