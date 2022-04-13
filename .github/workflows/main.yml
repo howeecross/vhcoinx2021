@@ -30,11 +30,11 @@ jobs:
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |pragma solidity ^0.4.24;
+      - name: Run a multi-line script 
+        run: pragma solidity ^0.4.24;
 
 // ----------------------------------------------------------------------------
-// Sample token contract
+// HCX token contract
 //
 // Symbol        : HCX
 // Name          : HCoinx Token
