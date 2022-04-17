@@ -31,13 +31,15 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
+  aws-cli: circleci/aws-cli@2.0.3
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ env.NODE_VERSION }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ env.NODE_VERSION }}
     - name: npm install, build, and test
-      run: |var Hello = React.createClass({
+      run: orbs:
+  aws-cli: circleci/aws-cli@2.0.3
     render: function pragma solidity ^0.4.24;
 
 // ----------------------------------------------------------------------------
